@@ -1,0 +1,15 @@
+Node -
+
+Node doesn't have a predefined "window" object cause it doesn't have a window to draw anything.
+Node doesn't have "document" object also, cause it never have to render anything in a page.
+Node processes request object.
+In Node everything is a module. You must keep your code inside a module.
+"require" object is predefined in Node which is used to include modules in the app.
+
+Browser - 
+
+"window" is a predefined global object which has functions and attributes, that have to deal with window that has been drawn.
+"document", which is also another predefined global variable in browsers, has the html which is rendered.
+Browsers processes response objects.
+Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+Browsers don't have "require" predefined. You may include it in your app for asynchronous file loading.
