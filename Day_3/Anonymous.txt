@@ -1,0 +1,107 @@
+Print odd numbers in an array 
+
+arr = [1,2,3,4,54,211,10]
+
+var findOdd = function(arr) {
+    var result = []
+    for (let i in arr){
+        if(arr[i]%2!==0){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+
+console.log(findOdd(arr))
+
+----------------------------------------------------------
+
+Convert all the strings to title caps in a string array
+
+upperCase = function(arr){
+    for(var i=0; i<arr.length; i++){
+        console.log(arr[i][0].toUpperCase() + arr[i].substring(1))
+    }
+}
+
+var arr = ["hello","world"]
+upperCase(arr)
+
+----------------------------------------------------------
+
+Sum of all numbers in an array
+
+var arr = [1,2,3,4,5,6,9];
+
+var sumAll = function(arr){
+    var sum = 0
+    for(var i=0; i<arr.length; i++){
+        sum += arr[i]
+    }
+    console.log(sum)
+};
+
+
+sumAll(arr)
+
+----------------------------------------------------------
+
+Return all the palindromes in an array 
+
+var arr = ["Chetan","Nitin","noon"];
+
+var pali = function(arr){
+    for(i=0; i<arr.length; i++){
+        if(arr[i].toLowerCase() === arr[i].toLowerCase().split("").reverse().join("")){
+            console.log(arr[i])
+        }
+    }
+}
+
+pali(arr)
+
+----------------------------------------------------------
+
+Return all the prime numbers in an array
+
+var arr = [11,3,7,5,1,23,21,20,90,89];
+
+var prime = function(arr){
+    var result =[]
+    for(var i=0; i<arr.length; i++){
+        var num = arr[i]
+        var flag = true;
+        if(num!==1){
+            for(var j=2; j<num; j++){
+                if(num % j === 0){
+                    flag = false
+                    break;
+                }
+            }
+        
+            if(flag===true){
+                result.push(arr[i])
+            }
+        }
+            
+    }
+    return result
+}
+
+console.log(prime(arr))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

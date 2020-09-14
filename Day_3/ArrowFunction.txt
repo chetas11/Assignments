@@ -1,0 +1,60 @@
+Print odd numbers in an array 
+
+arr = [1,2,3,4,54,211,10]
+
+var findOdd = arr.filter((num)=>{
+    return num%2!==0
+})
+
+console.log(findOdd)
+
+----------------------------------------------------------
+
+Convert all the strings to title caps in a string array
+
+arr = ["hello", "world", "chetan"]
+
+var titleCase = arr.map((str)=>{
+    return str[0].toUpperCase()+str.substr(1)
+})
+
+console.log(titleCase)
+
+----------------------------------------------------------
+
+Sum of all numbers in an array
+
+arr = [1,2,3,4,56,6]
+
+var sumAll= arr.reduce((sum, num)=>{
+    return num + sum
+})
+
+console.log(sumAll)
+
+----------------------------------------------------------
+
+Return all the prime numbers in an array
+
+
+var arr = [1,2,3,4,5,6,7,18];
+
+var pali = arr.filter((num)=>{
+    if(num!==1 && num%2!==0){
+        return num
+    }
+})
+
+console.log(pali)
+
+----------------------------------------------------------
+
+Return all the palindromes in an array 
+
+var arr = ["Chetan","Nitin","noon"];
+
+var pali = arr.filter((word)=>{
+    return word.toLowerCase() === word.toLowerCase().split("").reverse().join("")
+})
+
+console.log(pali)
