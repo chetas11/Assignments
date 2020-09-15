@@ -1,0 +1,16 @@
+var obj = {name : "RajiniKanth", age : 33, hasPets : false};
+
+function printAllValues(obj) {
+    var result = [];
+    for(var k in obj){
+        result.push(k)
+    }
+    
+    return result
+}
+
+
+var result = printAllValues
+console.log(result(obj))
+
+

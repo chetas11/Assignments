@@ -1,0 +1,12 @@
+var obj = {name : "ISRO", age : 33, hasPets : false};
+
+function convert(obj) {
+  var ans = [];
+    for(var i in obj) {
+        ans.push([i, obj[i]]);
+    }
+    
+    return ans
+}
+
+console.log(convert(obj));

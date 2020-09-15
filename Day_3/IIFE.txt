@@ -77,6 +77,59 @@ var arr = [11,3,7,5,1,23,21,20,90,89];
     console.log(result) 
 })();
 
+----------------------------------------------------------
+
+Remove duplicates from an array
+
+arr = [1,2,3,33,3,2,1,21,23,1,1,11,22,2];
+
+(function(){
+    var result = [];
+    for(var i=0; i<arr.length; i++){
+        if(result.indexOf(arr[i]) === -1){
+            result.push(arr[i])
+        }
+    }
+    
+    console.log(result)
+    
+})();
+
+----------------------------------------------------------
+
+Return median of two sorted arrays of same size 
+
+arr = [1,12,15,38];
+arr1 = [2,13,17,45];
+
+(function(){
+    med1 = arr[Math.floor(arr.length/2)]
+    med2 = arr1[Math.floor(arr1.length/2)]
+    console.log((med1+med2)/2)
+})();
+
+
+----------------------------------------------------------
+
+Rotate an array by k times and return the rotated array
+
+var arr = [1,2,3,4,5,6,7,8];
+var k=2;
+
+(function(){
+    var temp = arr.slice(0,k)
+    var result = arr.slice(k)
+    for(i=0; i<temp.length; i++){
+        result.push(temp[i])
+    }
+    
+    console.log(result)
+})();
+
+
+
+
+
 
 
 
