@@ -8,14 +8,16 @@ function transformEmployeeData(arr) {
          var key = (arr[i][j][0])
          var value = (arr[i][j][1])
          
-         tranformEmployeeList[key]=value
+         tranformEmployeeList.push([key,value])
      }
 
  }
  
- 
-console.log(tranformEmployeeList);
+
+return tranformEmployeeList;
+
 }
 
 
-transformEmployeeData(arr)
+var list = transformEmployeeData(arr)
+console.log(list)
