@@ -9,4 +9,7 @@ request.onload = function() {
   console.log(data.domains[0].country)
   
 }
+
+
+
   

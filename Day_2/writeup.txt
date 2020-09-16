@@ -1,0 +1,31 @@
+Javascript Error Handling - 
+
+Rule 1 -  Assume your code will fail
+Rule 2 - Log Error to the server
+Rule 3 -  we have to you handle our error not the browser
+Rule 4 - Identify Where error might Occur
+Rule 5 -  Throw your own Errors (Try differnt possiblites/test cases)
+Rule 6 - Distinguish Fatal vs Non Fatal Errors
+rule 7 - provode a Debug Mode
+
+Non Fatal Errors -- Effect only portion of page, recovery is possible, no indiation to user
+
+Fatal Errors -- cannot use application, message user immediately
+
+Error Life Cycle - 
+
+Error - try-Catch - window.onerror -Browser error
+
+
+Types of Error - 
+Type Coercion Errors
+Data Types Error
+Communication Error
+
+
+Debug mode -
+
+Assign a Variable that is globally available
+try-catch should re-throw the error
+window.onerror should return false
+allow the browser to handle the error
