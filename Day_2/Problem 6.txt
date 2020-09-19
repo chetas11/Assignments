@@ -2,22 +2,20 @@ var arr= [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role",
 
 function transformEmployeeData(arr) {
  var tranformEmployeeList = [];
+ var result = {}
  
  for(i=0; i<arr.length; i++){
      for(j=0; j<arr[i].length; j++){
          var key = (arr[i][j][0])
          var value = (arr[i][j][1])
          
-         tranformEmployeeList.push([key,value])
+         result[key] = value
      }
-
+    tranformEmployeeList.push(result)
+    result = {}
  }
  
-
-return tranformEmployeeList;
-
+ console.log(tranformEmployeeList)
 }
 
-
 var list = transformEmployeeData(arr)
-console.log(list)
